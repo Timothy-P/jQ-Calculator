@@ -12,5 +12,5 @@ function A() {
         document.getElementById("calcinput").value = "Error";
     }
     var C = document.getElementById("calcinput").value;
-    $("#history").append(B + "=" + C)
+    $("#history").append('<p>B + "=" + C+</p>')
 };
