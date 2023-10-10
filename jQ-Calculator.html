@@ -14,6 +14,30 @@
         </script>
     </head>
     <body>
-        
+        <div style="background-color: cadetblue; height: 100px; overflow: scroll;" class="sidebar">
+            <button onclick="Clearhist()">
+                Clear History
+            </button>
+            <div id="history"></div>
+        </div>
+        <center>
+            <div id="calcbody">
+                <input id="calcinput">
+                <br><br><br>
+                <button onclick="document.getElementById('calcinput').innerHTML += '1'">1</button>
+                <button onclick="document.getElementById('calcinput').innerHTML += '2'">2</button>
+                <button onclick="document.getElementById('calcinput').innerHTML += '3'">3</button>
+                <br>
+                <button onclick="document.getElementById('calcinput').innerHTML += '4'">4</button>
+                <button onclick="document.getElementById('calcinput').innerHTML += '5'">5</button>
+                <button onclick="document.getElementById('calcinput').innerHTML += '6'">6</button>
+                <br>
+                <button onclick="document.getElementById('calcinput').innerHTML += '7'">7</button>
+                <button onclick="document.getElementById('calcinput').innerHTML += '8'">8</button>
+                <button onclick="document.getElementById('calcinput').innerHTML += '9'">9</button>
+                <br>
+                <button onclick="document.getElementById('calcinput').innerHTML += '0'">0</button>
+            </div>
+        </center>
     </body>
 </html>
