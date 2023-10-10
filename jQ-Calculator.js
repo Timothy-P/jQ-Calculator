@@ -1,5 +1,5 @@
 function A() {
-    var B = document.getElementById("calcinput");
+    var B = document.getElementById("calcinput").value;
     let expression = document.getElementById("calcinput").value;
     let result;
     try {
@@ -11,6 +11,6 @@ function A() {
     } catch (error) {
         document.getElementById("calcinput").value = "Error";
     }
-    var C = document.getElementById("calcinput");
+    var C = document.getElementById("calcinput").value;
     $("#history").append(B + "=" + C)
 };
