@@ -12,9 +12,5 @@ function A() {
         document.getElementById("calcinput").value = "Error";
     }
     var C = document.getElementById("calcinput");
-    const para = document.createElement("p");
-    const node = document.createTextNode(B + "=" + C);
-    para.appendChild(node);
-    const element = document.getElementById("history");
-    element.appendChild(para);
+    $("#history").append(B + "=" + C)
 };
