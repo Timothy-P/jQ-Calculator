@@ -12,5 +12,8 @@ function A() {
         document.getElementById("calcinput").value = "Error";
     }
     var C = document.getElementById("calcinput").value;
-    $("#history").append('<p>B + "=" + C+</p>')
+    $("#history").append('<p>'+B + "=" + C+'</p>')
 };
+function B() {
+    $("#mainhist").slideToggle()
+}

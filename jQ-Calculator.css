@@ -38,15 +38,26 @@
     border-radius: 12px
 }
 .sidebar {
-	background-color: rgb(240,240,240);
-	height: 20px;
-	width: var(--sidebar-width);
+    background-color: cadetblue;
+    height: 500px;
+    overflow: scroll;
+	width: 200px;
 	position: fixed;
+    border-radius: 12px;
 }
 .sidebar a{
 	text-decoration: none;
 	/*font-size: 12px;*/
     border-radius: 12px;
+}
+.sidebar button {
+    background-color: cornflowerblue;
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 1.99em;
+    cursor: pointer;
 }
 .sidebar p {
 	padding: 5px;
@@ -54,7 +65,7 @@
 	margin: 0px;
 	font-family: monospace;
 	font-weight: 900;
-	font-size: 17px; /*14px;*/
+	font-size: 2em; /*14px;*/
 }
 .sidebar a div{
 	color: black/*white*/;
