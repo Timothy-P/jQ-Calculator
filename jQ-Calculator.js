@@ -38,3 +38,10 @@ $(document).on("unload", function() {
 $(document).on("unload", function() {
     document.getElementById("calcinput").value = localStorage.getItem("calcinputLocal")
 });
+/*$.ajax({
+    url: 'path.php',
+    type: 'PUT',
+    success: function(data) {
+      //play with data
+    }
+  });*/
