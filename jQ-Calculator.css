@@ -44,7 +44,7 @@
 	width: 200px;
 	position: fixed;
     border-radius: 12px;
-    left: 0.5;
+    left: 0.5%;
 }
 .sidebar a{
 	text-decoration: none;
@@ -125,12 +125,14 @@
 
 .sidebarB {
     background-color: cadetblue;
-    height: 500px;
+    height: auto;
     overflow: scroll;
-	width: 200px;
+	width: auto;
 	position: fixed;
     border-radius: 12px;
     bottom: 0.5%;
+    left: 39%;
+    font-size: 3em;
 }
 .sidebarB a{
 	text-decoration: none;
@@ -203,4 +205,13 @@
 }
 body {
     background-color: burlywood;
+}
+
+#averagecalbod {
+    background-color: cadetblue;
+    font-size: 3em;
+    top: 10%;
+    left: 39%;
+    width: 500px;
+    height: 500px;
 }

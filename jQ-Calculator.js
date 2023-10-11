@@ -29,7 +29,7 @@ function parathe() {
     }
 }
 function DEL() {
-    calculator.ans.value = calculator.ans.value.slice(0, -1);
+    document.getElementById("calcinput").value = document.getElementById("calcinput").value.slice(0, -1);
 };
 // Now, I'm gonna have to do .ajax because Chrome is garbage and decided to make localstorage useless. DX
 $(document).on("unload", function() {
@@ -46,5 +46,5 @@ $(document).on("unload", function() {
     }
   });*/
 function C() {
-    $("")
+    $(document).append("<div class='averagecalbod'></div>")
 }
