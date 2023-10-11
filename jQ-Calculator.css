@@ -44,6 +44,7 @@
 	width: 200px;
 	position: fixed;
     border-radius: 12px;
+    left: 0.5;
 }
 .sidebar a{
 	text-decoration: none;
@@ -76,6 +77,49 @@
 	font-family: monospace;
 }
 .sidebar a div:hover {
+	background-color: rgba(0,0,0,0.1)
+}
+.sidebarR {
+    background-color: cadetblue;
+    height: auto;
+    overflow: scroll;
+	width: auto;
+	position: fixed;
+    border-radius: 12px;
+    right: 0.5%;
+    padding: 12px;
+}
+.sidebarR a{
+	text-decoration: none;
+	/*font-size: 12px;*/
+    border-radius: 12px;
+}
+.sidebarR button {
+    background-color: cornflowerblue;
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 1.99em;
+    cursor: pointer;
+}
+.sidebarR p {
+	padding: 5px;
+	text-align: center;
+	margin: 0px;
+	font-family: monospace;
+	font-weight: 900;
+	font-size: 2em; /*14px;*/
+}
+.sidebarR a div{
+	color: black/*white*/;
+	padding: 5px;
+	padding-left: 15px;
+	/*margin-left:10px;*/
+	transition: 0.2s;
+	font-family: monospace;
+}
+.sidebarR a div:hover {
 	background-color: rgba(0,0,0,0.1)
 }
 .topbar {

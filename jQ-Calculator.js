@@ -1,3 +1,4 @@
+var Beta;
 function A() {
     var B = document.getElementById("calcinput").value;
     let expression = document.getElementById("calcinput").value;
@@ -17,3 +18,22 @@ function A() {
 function B() {
     $("#mainhist").slideToggle()
 }
+function parathe() {
+    if (Beta== "1") {
+        document.calculator.ans.value += "("
+        Beta = "2"
+    }
+    else {
+        document.calculator.ans.value += ")"
+        Beta= "1"
+    }
+}
+function DEL() {
+    calculator.ans.value = calculator.ans.value.slice(0, -1);
+}
+$(document).on("unload", function() {
+    localStorage.setItem("calcinputLocal", document.getElementById("caclinput").value)
+})
+$(document).on("unload", function() {
+    document.getElementById("calcinput").value = localStorage.getItem("calcinputLocal")
+})
