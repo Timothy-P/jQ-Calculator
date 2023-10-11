@@ -122,6 +122,50 @@
 .sidebarR a div:hover {
 	background-color: rgba(0,0,0,0.1)
 }
+
+.sidebarB {
+    background-color: cadetblue;
+    height: 500px;
+    overflow: scroll;
+	width: 200px;
+	position: fixed;
+    border-radius: 12px;
+    bottom: 0.5%;
+}
+.sidebarB a{
+	text-decoration: none;
+	/*font-size: 12px;*/
+    border-radius: 12px;
+}
+.sidebarB button {
+    background-color: cornflowerblue;
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 1.99em;
+    cursor: pointer;
+}
+.sidebarB p {
+	padding: 5px;
+	text-align: center;
+	margin: 0px;
+	font-family: monospace;
+	font-weight: 900;
+	font-size: 2em; /*14px;*/
+}
+.sidebarB a div{
+	color: black/*white*/;
+	padding: 5px;
+	padding-left: 15px;
+	/*margin-left:10px;*/
+	transition: 0.2s;
+	font-family: monospace;
+}
+.sidebarB a div:hover {
+	background-color: rgba(0,0,0,0.1)
+}
+
 .topbar {
     background-color: cadetblue;
     overflow: hidden;

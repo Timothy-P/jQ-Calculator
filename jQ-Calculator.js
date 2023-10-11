@@ -42,6 +42,9 @@ $(document).on("unload", function() {
     url: 'path.php',
     type: 'PUT',
     success: function(data) {
-      //play with data
+      alert("Data set.")
     }
   });*/
+function C() {
+    $("")
+}
