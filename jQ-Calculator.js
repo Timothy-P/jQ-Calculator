@@ -33,7 +33,7 @@ function DEL() {
 }
 $(document).on("unload", function() {
     localStorage.setItem("calcinputLocal", document.getElementById("caclinput").value)
-})
+});
 $(document).on("unload", function() {
     document.getElementById("calcinput").value = localStorage.getItem("calcinputLocal")
-})
+});
