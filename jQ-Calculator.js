@@ -50,16 +50,17 @@ function C() {
     // Checking out what I'm doing, eh? Just change the alert line to a comment and the code to
     // an actual bit of code. Send me an email or message about what you think! :D
 
-    /*$("#body").append("<div style='background-color: cadetblue;font-size: 3em;top: 10%;left: 35%;width: 500px;height: 500px;position:fixed;display:none;' class='averagecalbod'>"+"</div>");
+    /*$("#body").append("<div style='background-color: cadetblue;font-size: 3em;top: 25%;left: 25%;width: 740px;height: 300px;position:fixed;display:none;' class='averagecalbod'>"+"</div>");
     $(".averagecalbod").append("<center id='averagecalcent'></center>");
-    $("#averagecalcent").append("<input id='averageI1' class='averagecalI'>");
-    $("#averagecalcent").append("<input id='averageI2' class='averagecalI'>");
+    $("#averagecalcent").append("<input id='averageI1' style='background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border:5px;font-size:.5em;'>");
+    $("#averagecalcent").append("<input id='averageI2' style='background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border:5px;font-size:.5em;'>");
     $("#averagecalcent").append("<br>");
-    $("#averagecalcent").append("<input id='averageI3' class='averagecalI'>");
-    $("#averagecalcent").append("<input id='averageI4' class='averagecalI'>");
-    $('.averagecalbod').slideDown()*/
-
-    alert("Hello. This isn't working currently.\nCome back later when it is.")
+    $("#averagecalcent").append("<input id='averageI3' style='background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border:5px;font-size:.5em;'>");
+    $("#averagecalcent").append("<input id='averageI4' style='background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border:5px;font-size:.5em;'>");
+    $('.averagecalbod').slideDown();
+    $("#calcbody").slideUp();
+    $(".sidebarB").slideUp();*/
+    alert("Hello. This isn't working currently.\nCome back later when it is.\nThis area is going well.")
 }
 
 function Clearhist() {
