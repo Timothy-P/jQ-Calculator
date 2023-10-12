@@ -48,3 +48,6 @@ $(document).on("unload", function() {
 function C() {
     $(document).append("<div class='averagecalbod'></div>")
 }
+function Clearhist() {
+    document.getElementById("history").innerHTML = ""
+}
