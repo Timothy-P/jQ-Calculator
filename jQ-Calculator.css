@@ -41,7 +41,7 @@
     background-color: cadetblue;
     height: 500px;
     overflow: scroll;
-	width: 200px;
+	width: auto;
 	position: fixed;
     border-radius: 12px;
     left: 0.5%;
