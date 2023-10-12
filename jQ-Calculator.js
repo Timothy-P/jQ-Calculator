@@ -35,7 +35,7 @@ function DEL() {
 $(document).on("unload", function() {
     localStorage.setItem("calcinputLocal", document.getElementById("caclinput").value)
 });
-$(document).on("unload", function() {
+$(document).on("load", function() {
     document.getElementById("calcinput").value = localStorage.getItem("calcinputLocal")
 });
 /*$.ajax({
@@ -44,11 +44,24 @@ $(document).on("unload", function() {
     success: function(data) {
       alert("Data set.")
     }
-  });*/
+});*/
+
 function C() {
-    //$(document).append("<div class='averagecalbod'></div>")
+    // Checking out what I'm doing, eh? Just change the alert line to a comment and the code to
+    // an actual bit of code. Send me an email or message about what you think! :D
+
+    /*$("#body").append("<div style='background-color: cadetblue;font-size: 3em;top: 10%;left: 35%;width: 500px;height: 500px;position:fixed;display:none;' class='averagecalbod'>"+"</div>");
+    $(".averagecalbod").append("<center id='averagecalcent'></center>");
+    $("#averagecalcent").append("<input id='averageI1' class='averagecalI'>");
+    $("#averagecalcent").append("<input id='averageI2' class='averagecalI'>");
+    $("#averagecalcent").append("<br>");
+    $("#averagecalcent").append("<input id='averageI3' class='averagecalI'>");
+    $("#averagecalcent").append("<input id='averageI4' class='averagecalI'>");
+    $('.averagecalbod').slideDown()*/
+
     alert("Hello. This isn't working currently.\nCome back later when it is.")
 }
+
 function Clearhist() {
     document.getElementById("history").innerHTML = ""
 }

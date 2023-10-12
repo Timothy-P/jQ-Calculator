@@ -215,3 +215,18 @@ body {
     width: 500px;
     height: 500px;
 }
+#averagecalbodp {
+    color:black;
+    font-size: 3em;
+}
+#averagecalI {
+    background-color: turquoise;
+    height: auto;
+    width: auto;
+    border: 12px;
+    padding: 12px;
+    font-size: 1.5em;
+    border-radius: 12px;
+    color:black;
+    font-size: 3em;
+}
