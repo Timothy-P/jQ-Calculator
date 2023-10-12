@@ -45,6 +45,7 @@
 	position: fixed;
     border-radius: 12px;
     left: 0.5%;
+    max-width: 540px;
 }
 .sidebar a{
 	text-decoration: none;
