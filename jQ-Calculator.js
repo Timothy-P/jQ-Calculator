@@ -1,4 +1,5 @@
 var Beta;
+var ACI = "0";
 function A() {
     var B = document.getElementById("calcinput").value;
     let expression = document.getElementById("calcinput").value;
@@ -47,21 +48,20 @@ $(document).on("load", function() {
 });*/
 
 function C() {
-    // Checking out what I'm doing, eh? Just change the alert line to a comment and the code to
-    // an actual bit of code. Send me an email or message about what you think! :D
-
-    /*$("#body").append("<div id='averagecalbod' style='background-color: cadetblue;font-size: 3em;top: 25%;left: 25%;width: 740px;height: 300px;position:fixed;display:none;' class='averagecalbod'>"+"</div>");
-    $(".averagecalbod").append("<button onclick='CA()'>")
+    $("#body").append("<div id='averagecalbod' style='background-color: cadetblue;font-size: 3em;top: 25%;left: 25%;width: 740px;height: 300px;position:fixed;display:none; border-radius:12px;' class='averagecalbod'>"+"</div>");
+    $(".averagecalbod").append("<button style='left:25%;top:25%; position:fixed;border-radius:12px;' onclick='CA()'>X</button>");
     $(".averagecalbod").append("<center id='averagecalcent'></center>");
-    $("#averagecalcent").append("<input id='averageI1' style='background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border:5px;font-size:.5em;'>");
-    $("#averagecalcent").append("<input id='averageI2' style='background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border:5px;font-size:.5em;'>");
+    $("#averagecalcent").append("<input type='number' id='averageI1' style='cursor:auto;background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border-width:5px;font-size:.5em;'>");
+    $("#averagecalcent").append("<input type='number' id='averageI2' style='cursor:auto;background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border-width:5px;font-size:.5em;'>");
     $("#averagecalcent").append("<br>");
-    $("#averagecalcent").append("<input id='averageI3' style='background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border:5px;font-size:.5em;'>");
-    $("#averagecalcent").append("<input id='averageI4' style='background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border:5px;font-size:.5em;'>");
+    $("#averagecalcent").append("<input type='number' id='averageI3' style='cursor:auto;background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border-width:5px;font-size:.5em;'>");
+    $("#averagecalcent").append("<input type='number' id='averageI4' style='cursor:auto;background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border-width:5px;font-size:.5em;'>");
+    $("#averagecalcent").append("<br>");
+    $("#averagecalcent").append("<input disabled id='averageR' style='cursor:auto;background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border-width:5px;font-size:.5em;display: inline-block;'>");
+    $(".averagecalbod").append("<button style='border-radius:12px; left:61%;top:43.5%;position:fixed;font-size:0.5em;' onclick='Average()'>Calculate</button>");
     $('.averagecalbod').slideDown();
     $("#calcbody").slideUp();
-    $(".sidebarB").slideUp();*/
-    alert("Hello. This isn't working currently.\nCome back later when it is.\nThis area is going well, so I won\'t be too long.")
+    $(".sidebarB").slideUp();
 }
 
 function CA() {
@@ -74,3 +74,19 @@ function CA() {
 function Clearhist() {
     document.getElementById("history").innerHTML = ""
 }
+function Average() {
+    ACI = "0"
+    if (document.getElementById("averageI1").value != "") {
+        ACI = eval(ACI+1);
+    };
+    if (document.getElementById("averageI2").value != "") {
+        ACI = eval(ACI+1);
+    };
+    if (document.getElementById("averageI3").value != "") {
+        ACI = eval(ACI+1);
+    };
+    if (document.getElementById("averageI4").value != "") {
+        ACI = eval(ACI+1);
+    };
+    document.getElementById("averageR").value = eval("("+document.getElementById("averageI1").value+"+"+document.getElementById("averageI2").value+"+"+document.getElementById("averageI3").value+"+"+document.getElementById("averageI4").value+")"+"/"+ACI)
+};
