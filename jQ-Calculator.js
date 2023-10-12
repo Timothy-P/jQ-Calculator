@@ -46,7 +46,8 @@ $(document).on("unload", function() {
     }
   });*/
 function C() {
-    $(document).append("<div class='averagecalbod'></div>")
+    //$(document).append("<div class='averagecalbod'></div>")
+    alert("Hello. This isn't working currently.\nCome back later when it is.")
 }
 function Clearhist() {
     document.getElementById("history").innerHTML = ""
