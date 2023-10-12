@@ -50,7 +50,8 @@ function C() {
     // Checking out what I'm doing, eh? Just change the alert line to a comment and the code to
     // an actual bit of code. Send me an email or message about what you think! :D
 
-    /*$("#body").append("<div style='background-color: cadetblue;font-size: 3em;top: 25%;left: 25%;width: 740px;height: 300px;position:fixed;display:none;' class='averagecalbod'>"+"</div>");
+    /*$("#body").append("<div id='averagecalbod' style='background-color: cadetblue;font-size: 3em;top: 25%;left: 25%;width: 740px;height: 300px;position:fixed;display:none;' class='averagecalbod'>"+"</div>");
+    $(".averagecalbod").append("<button onclick='CA()'>")
     $(".averagecalbod").append("<center id='averagecalcent'></center>");
     $("#averagecalcent").append("<input id='averageI1' style='background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border:5px;font-size:.5em;'>");
     $("#averagecalcent").append("<input id='averageI2' style='background-color: turquoise;height: auto;width: auto;border: 12px;padding: 5px;border-radius: 12px;color:black;border-color: black;border:5px;font-size:.5em;'>");
@@ -60,7 +61,14 @@ function C() {
     $('.averagecalbod').slideDown();
     $("#calcbody").slideUp();
     $(".sidebarB").slideUp();*/
-    alert("Hello. This isn't working currently.\nCome back later when it is.\nThis area is going well.")
+    alert("Hello. This isn't working currently.\nCome back later when it is.\nThis area is going well, so I won\'t be too long.")
+}
+
+function CA() {
+    $("#calcbody").slideDown();
+    $(".sidebarB").slideDown();
+    $(".averagecalbod").slideUp();
+    setTimeout('document.getElementById("averagecalbod").remove();', 1000)
 }
 
 function Clearhist() {
