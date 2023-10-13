@@ -120,7 +120,7 @@ function PISIC() {
     }
     else if (Y<="0") {
         YPI = Math.abs(Y)
-        Slope = "-"+"("+Y1PI+"/"+X1+")";
+        Slope = "-"+"("+YPI+"/"+X1+")";
         document.getElementById("PISIR1").value = "Y+"+YPI+"="+Slope+"(X-"+X+")";
     }
     else if (X<="0") {
