@@ -111,11 +111,11 @@ function Average() {
     document.getElementById("averageR").value = eval("("+document.getElementById("averageI1").value+"+"+document.getElementById("averageI2").value+"+"+document.getElementById("averageI3").value+"+"+document.getElementById("averageI4").value+")"+"/"+ACI)
 };
 function PISIC() {
-    //alert("This is still a work in progrss.\nCheck back later to see the progress.")
+    alert("This is still a work in progrss.\nCheck back later to see the progress.")
     /*if (Y1<="0" && X1<="0") {
         X1PI = Math.abs(X1)
         Y1PI = Math.abs(Y1)
-        Slope = "-"+"("+Y1PI+"/"+X1PI+")";
+        Slope = "-"+"("+Y1PI+"/"+X1P+")";
         document.getElementById("PISIR1").value = "Y+"+Y1PI+"="+Slope+"(X+"+X1+")";
     }
     else if (Y1<="0") {
