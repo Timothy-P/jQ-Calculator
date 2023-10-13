@@ -111,9 +111,28 @@ function Average() {
     document.getElementById("averageR").value = eval("("+document.getElementById("averageI1").value+"+"+document.getElementById("averageI2").value+"+"+document.getElementById("averageI3").value+"+"+document.getElementById("averageI4").value+")"+"/"+ACI)
 };
 function PISIC() {
-    alert("This is still a work in progrss.\nCheck back later to see the progress.")
-    //Slope = "("+Y1+"/"+X1+")"
-    //document.getElementById("PISIR1").value = "Y-"+Y1+"="+Slope+"(X-"+X1+")"
+    //alert("This is still a work in progrss.\nCheck back later to see the progress.")
+    /*if (Y1<="0" && X1<="0") {
+        X1PI = Math.abs(X1)
+        Y1PI = Math.abs(Y1)
+        Slope = "-"+"("+Y1PI+"/"+X1PI+")";
+        document.getElementById("PISIR1").value = "Y+"+Y1PI+"="+Slope+"(X+"+X1+")";
+    }
+    else if (Y1<="0") {
+        Y1PI = Math.abs(Y1)
+        Slope = "-"+"("+Y1PI+"/"+X1+")";
+        document.getElementById("PISIR1").value = "Y+"+Y1PI+"="+Slope+"(X-"+X1+")";
+    }
+    else if (X1<="0") {
+        X1PI = Math.abs(X1)
+        Slope = "-"+"("+Y1+"/"+X1PI+")"
+        document.getElementById("PISIR1").value = "Y-"+Y1+"="+Slope+"(X+"+X1PI+")";
+    }
+    else {
+        Slope = "("+Y1+"/"+X1+")"
+        document.getElementById("PISIR1").value = "Y-"+Y1+"="+Slope+"(X-"+X1+")";
+    }
+    SC()*/
 }
 function intmenue1() {
     $("#body").append("<div id='PISI' style='background-color: cadetblue;font-size: 3em;top: 12%;left: 25%;width: 740px;height: 500px;position:fixed;display:none; border-radius:12px;' class='averagecalbod'>"+"</div>");
@@ -150,8 +169,8 @@ function intmenu() {
     $('#intmenu').fadeIn()
 }
 
-function XC() {
-    /*X1 = document.getElementById("PISII3").value
+/*function XC() {
+    X1 = document.getElementById("PISII3").value
     X2 = document.getElementById("PISII6").value
     if (X2>="0") {
         X = eval(X1+"-"+X2);
@@ -159,10 +178,10 @@ function XC() {
     else {
         X = eval(X1+"+"+X2)
     }
-    YC()*/
+    YC()
 }
 function YC() {
-    /*Y1 = document.getElementById("PISII4").value
+    Y1 = document.getElementById("PISII4").value
     Y2 = document.getElementById("PISII6").value
     if (Y2>="0") {
         Y = eval(Y1+"-"+Y2);
@@ -170,10 +189,9 @@ function YC() {
     else {
         Y = eval(Y1+"+"+Y2)
     }
-    SC()
     PISIC()
 }
 function SC() {
     Yint = 
-    document.getElementById("PISIR2").value = "Y="+Slope+"X"+Yint*/
-}
+    document.getElementById("PISIR2").value = "Y="+Slope+"X"+Yint
+}*/
