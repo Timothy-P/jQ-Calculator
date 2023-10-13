@@ -111,7 +111,6 @@ function Average() {
     document.getElementById("averageR").value = eval("("+document.getElementById("averageI1").value+"+"+document.getElementById("averageI2").value+"+"+document.getElementById("averageI3").value+"+"+document.getElementById("averageI4").value+")"+"/"+ACI)
 };
 function PISIC() {
-    //alert("This is still a work in progrss.\nCheck back later to see the progress.")
     if (Y<="0" && X<="0") {
         XPI = Math.abs(X)
         YPI = Math.abs(Y)
@@ -192,6 +191,6 @@ function YC() {
     PISIC()
 }
 function SC() {
-    Yint = 
-    document.getElementById("PISIR2").value = "Y="+Slope+"X"+Yint
+    Yint = eval(Y+eval(X+"*"+Slope))
+    document.getElementById("PISIR2").value = "Y="+Slope+"X"+"+"+Yint
 }
