@@ -114,7 +114,7 @@ function PISIC() {
     if (Y<="0" && X<="0") {
         XPI = Math.abs(X)
         YPI = Math.abs(Y)
-        Slope = "-"+"("+YPI+"/"+XPI+")";
+        Slope = "("+YPI+"/"+XPI+")";
         document.getElementById("PISIR1").value = "Y+"+YPI+"="+Slope+"(X+"+XPI+")";
     }
     else if (Y<="0") {
