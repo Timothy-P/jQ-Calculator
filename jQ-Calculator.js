@@ -115,7 +115,7 @@ function PISIC() {
     if (Y<="0" && X<="0") {
         XPI = Math.abs(X)
         YPI = Math.abs(Y)
-        Slope = "-"+"("+YPI+"/"+X1PI+")";
+        Slope = "-"+"("+YPI+"/"+XPI+")";
         document.getElementById("PISIR1").value = "Y+"+YPI+"="+Slope+"(X+"+XPI+")";
     }
     else if (Y<="0") {
@@ -124,7 +124,7 @@ function PISIC() {
         document.getElementById("PISIR1").value = "Y+"+YPI+"="+Slope+"(X-"+X+")";
     }
     else if (X<="0") {
-        X1PI = Math.abs(X1)
+        XPI = Math.abs(X1)
         Slope = "-"+"("+Y+"/"+XPI+")"
         document.getElementById("PISIR1").value = "Y-"+Y+"="+Slope+"(X+"+XPI+")";
     }
