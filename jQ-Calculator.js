@@ -157,12 +157,33 @@ function intmenue1() {
     setTimeout('document.getElementById("intmenu").remove();', 1000)
     $("#PISI").fadeIn()
 }
+function intmenu2C() {
+    $("#body").append("<div id='PISI2' style='background-color: cadetblue;font-size: 3em;top: 12%;left: 25%;width: 740px;height: 500px;position:fixed;display:none; border-radius:12px;' class='averagecalbod'>"+"</div>");
+    $("#PISI2").append('<button style="left: 25%;top:12%;position:fixed;border-radius:12px;" onclick="CIM1()">X</button>');
+    $("#PISI2").append('<p style="font-size:0.8em;position:fixed;left:25%;top:30%;">Y=</p>')
+    $("#PISI2").append('<input type="numbers" style="font-size:0.6em;position:fixed;left: 28.5%;top: 35.5%;width: 90px;">')
+    $("#PISI2").append('<p style="font-size:0.8em;position:fixed;left: 35%;top:30%;">X(</p>')
+    $("#PISI2").append('<p style="font-size:0.8em;position:fixed;left: 40%;top:30%;">)</p>')
+    $("#PISI2").append('<p style="font-size: 0.5em;position:fixed;left: 37.5%;top: 33%;">+</p>')
+    $("#PISI2").append('<p style="font-size:0.4em;position:fixed;left: 39.3%;top: 35%;">-</p>')
+    $("#PISI2").append('<p style="font-size:0.6em;position:fixed;left: 38.5%;top: 32.5%;">/</p>')
+    $("#PISI2").append('<input type="numbers" style="font-size:0.6em;position:fixed;left: 41%;top: 35.5%;width: 90px;">')
+
+    $("#intmenu").fadeOut();
+    setTimeout('document.getElementById("intmenu").remove();', 1000)
+    $("#PISI2").fadeIn()
+}
+/*$(document).ready(function (){
+    $("#intmenu2").click(function(){
+        intmenu2C()
+    });
+})*/
 function intmenu() {
     $("#body").append("<div id='intmenu' style='background-color: cadetblue;font-size: 3em;top: 25%;left: 29%;width: 540px;height: 300px;position:fixed;display:none; border-radius:12px;' class='averagecalbod'>"+"</div>");
     $("#intmenu").append('<button style="left: 29%;top:25%;position:fixed;border-radius:12px;" onclick="CIM()">X</button>');
     $("#intmenu").append('<input type="button" id="intmenu1" style="left: 33%;top: 29%;position:fixed;border-radius:12px;font-size: 0.9em;" onclick="intmenue1()" value="Point-int to Slope-int">');
-    $("#intmenu").append('<input type="button" id="intmenu2" style="left: 33%;top: 42%;position:fixed;border-radius:12px;font-size: 0.9em;" onclick="intmenue2()" value="Standard to Slope-int">');
-    $("#intmenu").append('<input type="button" id="intmenu3" style="left: 33%;top: 55%;position:fixed;border-radius:12px;font-size: 0.9em;" onclick="intmenue3()" value="Slope-int to Standard">');
+    $("#intmenu").append('<button type="button" id="intmenu2" style="left: 33%;top: 42%;position:fixed;border-radius:12px;font-size: 0.9em;" onclick="function temp(){intmenue2C()}">Standard to Slope-int</button>');
+    $("#intmenu").append('<button type="button" id="intmenu3" style="left: 33%;top: 55%;position:fixed;border-radius:12px;font-size: 0.9em;" onclick="intmenu3()">Slope-int to Standard</button');
     $(".sidebarB").fadeOut()
     $("#calcbody").fadeOut()
     $('#intmenu').fadeIn()
@@ -192,5 +213,5 @@ function YC() {
 }
 function SC() {
     Yint = eval(Y1+eval(Math.abs(X1)+"*"+eval(Slope)))
-    document.getElementById("PISIR2").value = "Y="+eval(Slope)+"X"+"+"+"("+Yint+")"
+    document.getElementById("PISIR2").value = "Y="+Math.round(eval(Slope))+"X"+"+"+"("+Yint+")"
 }
