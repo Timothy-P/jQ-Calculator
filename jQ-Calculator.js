@@ -12,6 +12,9 @@ let M4;
 let Mval;
 let M2;
 let M3;
+let M6;
+let M5;
+let Mval2;
 function A() {
     var B = document.getElementById("calcinput").value;
     let expression = document.getElementById("calcinput").value;
@@ -165,13 +168,13 @@ function intmenu2C() {
     $("#body").append("<div id='PISI' style='background-color: cadetblue;font-size: 3em;top: 32%;left: 25%;width: 560px;height: 300px;position:fixed;display:none; border-radius:12px;' class='averagecalbod'>"+"</div>");
     $("#PISI").append('<button style="left: 25%;top:32%;position:fixed;border-radius:12px;" onclick="CIM1()">X</button>');
     $("#PISI").append('<p style="font-size:0.8em;position:fixed;left:25%;top:30%;">Y=</p>')
-    $("#PISI").append('<input id="MInput" type="numbers" style="font-size:0.6em;position:fixed;left: 28.5%;top: 35.5%;width: 90px;">')
+    $("#PISI").append('<input id="MInput" type="numbers" style="font-size:0.6em;position:fixed;left: 28.5%;top: 36.5%;width: 90px;">')
     $("#PISI").append('<p style="font-size:0.8em;position:fixed;left: 35%;top:30%;">X(</p>')
     $("#PISI").append('<p style="font-size:0.8em;position:fixed;left: 40%;top:30%;">)</p>')
     $("#PISI").append('<p style="font-size: 0.5em;position:fixed;left: 37.5%;top: 33%;">+</p>')
     $("#PISI").append('<p style="font-size:0.4em;position:fixed;left: 39.3%;top: 35%;">-</p>')
     $("#PISI").append('<p style="font-size:0.6em;position:fixed;left: 38.5%;top: 32.5%;">/</p>')
-    $("#PISI").append('<input id="BInput" type="numbers" style="font-size:0.6em;position:fixed;left: 41%;top: 35.5%;width: 90px;">')
+    $("#PISI").append('<input id="BInput" type="numbers" style="font-size:0.6em;position:fixed;left: 41%;top: 36.5%;width: 90px;">')
     $("#PISI").append('<input disabled id="PSTSR" type="numbers" style="font-size:0.6em;position:fixed;left: 25.5%;top: 53%;width: 390px;">')
     $("#PISI").append('<button onclick="navigator.clipboard.writeText(document.getElementById(\'PSTSR\').value);" style="left: 25.5%;top: 62%;position: fixed;font-size: 0.5em;">Copy Result</button>')
     $("#PISI").append('<button onclick="PSTSN()" style="position:fixed;left:50%;top:32%;font-size:0.6em">Note</button>');
@@ -225,11 +228,18 @@ function PSTS() {
     B1 = document.getElementById("BInput").value;
     Mval = document.getElementById("MInput").value;
 
-    if (Mval.indexOf("/") != 0) {
+    if (Mval.indexOf("/") != -1) {
         M2 = Mval.indexOf(")")
         M3 = Mval.indexOf("/")+1
         M4 = Mval.slice(M3, M2)
-        B2 = eval(B1+"*"+M4);
+        B2 = B1*M4
+        M5 = Mval.indexOf("(")+1
+        M6 = Mval.indexOf("/")
+        M7 = Mval.slice(M5, M6)
+        Mval2 = eval("-1"*M7*M4/M4)
+    }
+    else {
+        Mval2 = eval("-1"*Mval)
     };
 }
 function PSTSN() {
