@@ -322,7 +322,7 @@ function PSTS() {
     }
 }
 function PSTSN() {
-    alert("For the M, you have to put it in a fraction, or it won't work properly.\nIt should be formatted like the following; (1/2)\n(If it needs to be put in a fraction.)")
+    alert("For the M, you have to put it in a fraction, or it won't work properly.\nIt should be formatted like the following; (1/2) or (-5/-5)\n(If it needs to be put in a fraction.)")
 }
 
 // Standard to Slope-int
