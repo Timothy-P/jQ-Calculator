@@ -247,26 +247,109 @@ function PSTS() {
             B2 = B1*"-1"
         }
     };
-    if (Mval.indexOf("/") != -1) {
-        if (Mval2 >= "0") {
-            document.getElementById("PSTSR").value = eval(Mval2)+"X+"+M4+"Y="+B2;
-            console.log("Mval2(Fraction) >= 0");
-        }
-        else {
-            document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X-"+M4+"Y="+B2;
-            console.log("Mval2(Fraction) <= 0");
-        };
-    }
-    else {
+    if (Mval.indexOf("/") == -1) {
         if (Mval2 >= "0") {
             document.getElementById("PSTSR").value = eval(Mval2)+"X+Y="+B2;
-            console.log("Mval2(Whole Number) >= 0");
         }
         else {
             document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X-Y="+B2;
-            console.log("Mval2(Whole Number) <= 0");
         };
     }
+    else {
+        if (M7.indexOf("-") != -1 && M4.indexOf("-") != -1) {
+            console.log("-, -")
+            M4 = M4*"-1"
+            if (Mval.indexOf("/") != -1) {
+                if (Mval2 >= "0") {
+                    document.getElementById("PSTSR").value = eval(Mval2)+"X+"+M4+"Y="+B2;
+                }
+                else {
+                    document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X-"+M4+"Y="+B2;
+                };
+            }
+            
+        }
+        else if (M7.indexOf("-") != -1 && M4.indexOf("-") >= -1) {
+            console.log("-, +")
+            if (Mval.indexOf("/") != -1) {
+                if (Mval2 >= "0") {
+                    document.getElementById("PSTSR").value = eval(Mval2)+"X-"+M4+"Y="+B2;
+                }
+                else {
+                    document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X+"+M4+"Y="+B2;
+                };
+            }
+            else {
+                if (Mval2 >= "0") {
+                    document.getElementById("PSTSR").value = eval(Mval2)+"X-Y="+B2;
+                }
+                else {
+                    document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X+Y="+B2;
+                };
+            }
+        }
+        else if (M7.indexOf("-") >= -1 && M4.indexOf("-") != -1) {
+            console.log("+, -")
+            M4 = M4*"-1"
+            if (Mval.indexOf("/") != -1) {
+                if (Mval2 >= "0") {
+                    document.getElementById("PSTSR").value = eval(Mval2)+"X-"+M4+"Y="+B2;
+                }
+                else {
+                    document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X+"+M4+"Y="+B2;
+                };
+            }
+            else {
+                if (Mval2 >= "0") {
+                    document.getElementById("PSTSR").value = eval(Mval2)+"X-Y="+B2;
+                }
+                else {
+                    document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X+Y="+B2;
+                };
+            }
+        }
+        else {
+            console.log("+, +")
+            if (Mval.indexOf("/") != -1) {
+                if (Mval2 >= "0") {
+                    document.getElementById("PSTSR").value = eval(Mval2)+"X+"+M4+"Y="+B2;
+                }
+                else {
+                    document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X-"+M4+"Y="+B2;
+                };
+            }
+        }
+    }
+    /*if (M4.indexOf("-") != -1) {
+        M4 = M4*"-1"
+        if (Mval.indexOf("/") != -1) {
+            if (Mval2 >= "0") {
+                document.getElementById("PSTSR").value = eval(Mval2)+"X-"+M4+"Y="+B2;
+            }
+            else {
+                document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X+"+M4+"Y="+B2;
+            };
+        }
+        else {
+            if (Mval2 >= "0") {
+                document.getElementById("PSTSR").value = eval(Mval2)+"X-Y="+B2;
+            }
+            else {
+                document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X+Y="+B2;
+            };
+        }
+    }
+    else {
+        if (Mval.indexOf("/") != -1) {
+            if (Mval2 >= "0") {
+                document.getElementById("PSTSR").value = eval(Mval2)+"X+"+M4+"Y="+B2;
+            }
+            else {
+                document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X-"+M4+"Y="+B2;
+            };
+        }
+        
+    }*/
 }
 function PSTSN() {
     alert("For the M, you have to put it in a fraction, or it won't work properly.\nIt should be formatted like the following; (1/2)\n(If it needs to be put in a fraction.)")
