@@ -320,37 +320,15 @@ function PSTS() {
             }
         }
     }
-    /*if (M4.indexOf("-") != -1) {
-        M4 = M4*"-1"
-        if (Mval.indexOf("/") != -1) {
-            if (Mval2 >= "0") {
-                document.getElementById("PSTSR").value = eval(Mval2)+"X-"+M4+"Y="+B2;
-            }
-            else {
-                document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X+"+M4+"Y="+B2;
-            };
-        }
-        else {
-            if (Mval2 >= "0") {
-                document.getElementById("PSTSR").value = eval(Mval2)+"X-Y="+B2;
-            }
-            else {
-                document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X+Y="+B2;
-            };
-        }
-    }
-    else {
-        if (Mval.indexOf("/") != -1) {
-            if (Mval2 >= "0") {
-                document.getElementById("PSTSR").value = eval(Mval2)+"X+"+M4+"Y="+B2;
-            }
-            else {
-                document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X-"+M4+"Y="+B2;
-            };
-        }
-        
-    }*/
 }
 function PSTSN() {
     alert("For the M, you have to put it in a fraction, or it won't work properly.\nIt should be formatted like the following; (1/2)\n(If it needs to be put in a fraction.)")
+}
+
+// Standard to Slope-int
+function intmenu3() {
+    /*$("#body").append("<div id='intmenu' style='background-color: cadetblue;font-size: 3em;top: 25%;left: 29%;width: 540px;height: 300px;position:fixed;display:none; border-radius:12px;' class='averagecalbod'>"+"</div>");
+    $("#intmenu").append('<button style="left: 29%;top:25%;position:fixed;border-radius:12px;" onclick="CIM()">X</button>');
+    $("#intmenu").append('')*/
+    alert("Oops. It seems like I haven\'t gotten to making the base menu.\nCome back later or download the latest files.")
 }
