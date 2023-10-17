@@ -188,8 +188,8 @@ function intmenu() {
     $("#body").append("<div id='intmenu' style='background-color: cadetblue;font-size: 3em;top: 25%;left: 29%;width: 540px;height: 300px;position:fixed;display:none; border-radius:12px;' class='averagecalbod'>"+"</div>");
     $("#intmenu").append('<button style="left: 29%;top:25%;position:fixed;border-radius:12px;" onclick="CIM()">X</button>');
     $("#intmenu").append('<input type="button" id="intmenu1" style="left: 33%;top: 29%;position:fixed;border-radius:12px;font-size: 0.9em;" onclick="intmenu1()" value="Point-int to Slope-int">');
-    $("#intmenu").append('<button type="button" id="intmenu2" style="left: 33%;top: 42%;position:fixed;border-radius:12px;font-size: 0.9em;" onclick="intmenu2C()">Standard to Slope-int</button>');
-    $("#intmenu").append('<button type="button" id="intmenu3" style="left: 33%;top: 55%;position:fixed;border-radius:12px;font-size: 0.9em;" onclick="intmenu3()">Slope-int to Standard</button');
+    $("#intmenu").append('<button type="button" id="intmenu2" style="left: 33%;top: 42%;position:fixed;border-radius:12px;font-size: 0.9em;" onclick="intmenu3()">Standard to Slope-int</button>');
+    $("#intmenu").append('<button type="button" id="intmenu3" style="left: 33%;top: 55%;position:fixed;border-radius:12px;font-size: 0.9em;" onclick="intmenu2C()">Slope-int to Standard</button');
     $(".sidebarB").fadeOut()
     $("#calcbody").fadeOut()
     $('#intmenu').fadeIn()
@@ -232,15 +232,27 @@ function PSTS() {
         M2 = Mval.indexOf(")")
         M3 = Mval.indexOf("/")+1
         M4 = Mval.slice(M3, M2)
-        B2 = B1*M4
+        B2 = B1*(M4*"-1")
         M5 = Mval.indexOf("(")+1
         M6 = Mval.indexOf("/")
         M7 = Mval.slice(M5, M6)
-        Mval2 = eval("-1"*M7*M4/M4)
+        Mval2 = "-1"*M7*M4/M4
     }
     else {
-        Mval2 = eval("-1"*Mval)
+        Mval2 = "-1"*Mval
+        if (Mval2 > "0") {
+            B2 = B1;
+        }
+        else {
+            B2 = B1*"-1"
+        }
     };
+    if (Mval2 > "0") {
+        document.getElementById("PSTSR").value = eval(Mval2)+"X-Y="+B2;
+    }
+    else {
+        document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X+Y="+B2;
+    }
 }
 function PSTSN() {
     alert("For the M, you have to put it in a fraction, or it won't work properly.\nIt should be formatted like the following; (1/2)\n(If it needs to be put in a fraction.)")
