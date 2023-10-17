@@ -247,11 +247,25 @@ function PSTS() {
             B2 = B1*"-1"
         }
     };
-    if (Mval2 > "0") {
-        document.getElementById("PSTSR").value = eval(Mval2)+"X-Y="+B2;
+    if (Mval.indexOf("/") != -1) {
+        if (Mval2 >= "0") {
+            document.getElementById("PSTSR").value = eval(Mval2)+"X+"+M4+"Y="+B2;
+            console.log("Mval2(Fraction) >= 0");
+        }
+        else {
+            document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X-"+M4+"Y="+B2;
+            console.log("Mval2(Fraction) <= 0");
+        };
     }
     else {
-        document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X+Y="+B2;
+        if (Mval2 >= "0") {
+            document.getElementById("PSTSR").value = eval(Mval2)+"X+Y="+B2;
+            console.log("Mval2(Whole Number) >= 0");
+        }
+        else {
+            document.getElementById("PSTSR").value = eval(Mval2*"-1")+"X-Y="+B2;
+            console.log("Mval2(Whole Number) <= 0");
+        };
     }
 }
 function PSTSN() {
