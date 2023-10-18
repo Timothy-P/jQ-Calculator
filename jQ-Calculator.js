@@ -327,10 +327,11 @@ function PSTSN() {
 
 // Standard to Slope-int
 function intmenu3() {
-    $("#body").append("<div id='PISI' style='background-color: cadetblue;font-size: 3em;top: 32%;left: 25%;width: 560px;height: 300px;position:fixed;display:none; border-radius:12px;' class='averagecalbod'>"+"</div>");
+    /*$("#body").append("<div id='PISI' style='background-color: cadetblue;font-size: 3em;top: 32%;left: 25%;width: 560px;height: 300px;position:fixed;display:none; border-radius:12px;' class='averagecalbod'>"+"</div>");
     $("#PISI").append('<button style="left: 25%;top:32%;position:fixed;border-radius:12px;" onclick="CIM1()">X</button>');
     $("#PISI").append('<input id="MInput" type="numbers" style="font-size:0.6em;position:fixed;left: 39%;top: 46.4%;width: 90px;">');
-    $("#PISI").append('<p style="font-size:0.8em;position:fixed;left: 32%;top: 40%;">X+Y=</p>')
+    $("#PISI").append('<p style="font-size:0.8em;position:fixed;left: 32%;top: 40%;">X</p>')
+    $("#PISI").append('<p style="font-size:0.8em;position:fixed;left: 35.8%;top: 40%;">Y=</p>')
     $("#PISI").append('<button onclick="STPIN()" style="position:fixed;left:50%;top:32%;font-size:0.6em">Note</button>')
     $("#PISI").append('<input disabled="" id="STPIR" type="numbers" style="font-size:0.6em;position:fixed;left: 25.5%;top: 53%;width: 390px;">')
     $("#PISI").append('<button onclick="STPI()" style="position:fixed;left:52%;top:53%;font-size:0.6em">Calculate</button>')
@@ -339,8 +340,8 @@ function intmenu3() {
     //$("#PISI").append('')
     $("#intmenu").fadeOut();
     $("#PISI").fadeIn();
-    document.getElementById("intmenu").remove();
-    //alert("Oops. It seems like I haven\'t gotten to making the base menu.\nCome back later or download the latest files.")
+    document.getElementById("intmenu").remove();*/
+    alert("Oops. It seems like I haven\'t gotten to making the base menu.\nCome back later or download the latest files.")
 }
 function STPIN() {
     alert("Don\'t put a fraction of any kind because it won\'t work.")
@@ -348,3 +349,9 @@ function STPIN() {
 function STPI() {
     alert("This isn\'t working right now.\nCheck back on the GitHub page if you don\'t the most recent files.")
 }
+/*<select  name="PN" id="PAN">
+  <optgroup>
+    <option>+</option>
+    <option>-</option>
+  </optgroup>
+</select>*/
