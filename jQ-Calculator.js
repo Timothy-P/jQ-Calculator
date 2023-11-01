@@ -341,7 +341,6 @@ function intmenu3() {
     $("#intmenu").fadeOut();
     $("#PISI").fadeIn();
     document.getElementById("intmenu").remove();
-    //alert("Oops. It seems like I haven\'t gotten to making the base menu.\nCome back later or download the latest files.")
 }
 function STPIN() {
     alert("Don\'t put a fraction of any kind because it won\'t work.\n\nIf X=1 or -1, put 1 or -1 respectively.\nThis also applies to the B input.")
